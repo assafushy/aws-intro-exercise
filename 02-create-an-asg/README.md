@@ -23,9 +23,9 @@ user-data script:
 #!/bin/bash
 
 # Update the instance
-yum update -y
+sudo yum update -y
 # Install docker
-yum -y install docker
+sudo yum -y install docker
 sudo yum -y install python-pip
 pip3 install bpytop --upgrade
 # sudo yum -y install htop
