@@ -8,9 +8,9 @@
 
 ```bash
 # Update the instance
-yum update -y
+sudo yum update -y
 # Install docker
-yum -y install docker
+sudo yum -y install docker
 ```
 
 - Pull and run nginx container on Docker, mapping port 80 of the container to port 80 on the host
@@ -24,9 +24,9 @@ After all done manually, we can use user-data to automate the process:
 #!/bin/bash
 
 # Update the instance
-yum update -y
+sudo yum update -y
 # Install docker
-yum -y install docker
+sudo yum -y install docker
 # Add the ec2-user to the docker group so you can execute Docker commands without using sudo
 sudo usermod -a -G docker ec2-user
 sudo su - $USER
