@@ -1,4 +1,4 @@
-# Run an Nginx inside docker on ec2
+# Autoscaling Group - ASG
 
 ## Create an Autoscaling Group - ASG
 
