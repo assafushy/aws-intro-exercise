@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+  aws-demo-server:
+    image: assafushy/aws-demo-server:curl-fixed
+    ports:
+      - 80:80
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
